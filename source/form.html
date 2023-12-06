@@ -46,22 +46,24 @@
   <form class="main-form__search user-data" action="https://echo.htmlacademy.ru/" method="post">
     <div class="user-data__wrapper">
       <fieldset class="user-data personal-info">
+        <legend class="visually-hidden">Все о вашем котике</legend>
       <ul class="personal-info__list">
         <li class="personal-info__item">
-          <label class="personal-info__label">ИМЯ:*</label>
-          <input class="personal-info__input personal-info__input-name" type="text" name="name" placeholder="БАРСИК" required>
+          <label class="personal-info__label" for="name">ИМЯ:*</label>
+          <input class="personal-info__input personal-info__input-name" type="text" name="name" id="name" placeholder="БАРСИК" required>
         </li>
         <li class="personal-info__item">
-          <label class="personal-info__label">Вес (кг):*</label>
-          <input class="personal-info__input personal-info__input-weight" type="number" name="weight" placeholder="7" required>
+          <label class="personal-info__label" for="weight">Вес (кг):*</label>
+          <input class="personal-info__input personal-info__input-weight" type="number" name="weight" id="weight" placeholder="7" required>
         </li>
         <li class="personal-info__item">
-          <label class="personal-info__label">Возраст (лет):</label>
-          <input class="personal-info__input personal-info__input-age" type="number" name="age" placeholder="7" required>
+          <label class="personal-info__label" for="age">Возраст (лет):</label>
+          <input class="personal-info__input personal-info__input-age" type="number" name="age" id="age" placeholder="7" required>
         </li>
       </ul>
       </fieldset>
       <fieldset class="user-data main-goal">
+        <legend class="visually-hidden">Что будем делать с котиком</legend>
         <ul class="main-goal__list">
           <li class="main-goal__item">
             <label class="main-goal__label" for="weight-loss">
@@ -87,18 +89,18 @@
         <legend class="owner-contacts__title">КОНТАКТНЫЕ ДАННЫЕ (ВЛАДЕЛЬЦА КОТА)</legend>
         <ul class="owner-contacts__list">
           <li class="owner-contacts__item">
-            <label class="owner-contacts__label">E-MAIL:*</label>
-            <input class="owner-contacts__input owner-contacts__input-email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+            <label class="owner-contacts__label" for="email">E-MAIL:*</label>
+            <input class="owner-contacts__input owner-contacts__input-email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
           </li>
           <li class="owner-contacts__item">
-            <label class="owner-contacts__label">ТЕЛЕФОН:*</label>
-            <input class="owner-contacts__input owner-contacts__input-phone" type="number" name="phone" placeholder="8 (960) 900-60-90" required>
+            <label class="owner-contacts__label" for="phone">ТЕЛЕФОН:*</label>
+            <input class="owner-contacts__input owner-contacts__input-phone" type="number" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
           </li>
         </ul>
       </fieldset>
       <fieldset class="user-data comment">
         <legend class="comment__title">Комментарий</legend>
-        <textarea class="comment__text" rows="10" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
+        <textarea class="comment__text" rows="10" name="комментарий" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
       </fieldset>
       <fieldset class="user-data more-info">
         <legend class="more-info__title">Дополнительно</legend>
