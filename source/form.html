@@ -4,6 +4,13 @@
   <meta charset="UTF-8">
   <title>Форма подбора программы</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="./favicons/icon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicons/16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicons/32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./favicons/96x96.png">
+  <link rel="apple-touch-icon" href="favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -11,10 +18,10 @@
 <header class="main-header">
   <div class="main-header__logo-wrapper">
     <a class="main-header__logo-img" href="index.html">
-      <img src="./images/logotype-phone.svg" width="33" height="38" alt="Логотип Cat Energy">
+      <img src="./images/logotype-phone.svg" width="33" height="38" alt="Логотип Cat Energy.">
     </a>
     <a class="main-header__logo-text" href="index.html">
-      <img src="./images/logotype-text.svg" width="101" height="18" alt="Текст Cat Energy">
+      <img src="./images/logotype-text.svg" width="101" height="18" alt="Текст Cat Energy.">
     </a>
   </div>
   <nav class="main-nav">
@@ -49,15 +56,15 @@
         <legend class="visually-hidden">Все о вашем котике</legend>
       <ul class="personal-info__list">
         <li class="personal-info__item">
-          <label class="personal-info__label" for="name">Имя:*</label>
-          <input class="personal-info__input personal-info__input-name" type="text" name="name" id="name" placeholder="БАРСИК" required>
+          <label class="personal-info__label" for="name">имя:*</label>
+          <input class="personal-info__input personal-info__input-name" type="text" name="name" id="name" placeholder="барсик" required>
         </li>
         <li class="personal-info__item">
-          <label class="personal-info__label" for="weight">Вес (кг):*</label>
+          <label class="personal-info__label" for="weight">вес (кг):*</label>
           <input class="personal-info__input personal-info__input-weight" type="number" name="weight" id="weight" placeholder="7" required>
         </li>
         <li class="personal-info__item">
-          <label class="personal-info__label" for="age">Возраст (лет):</label>
+          <label class="personal-info__label" for="age">возраст (лет):</label>
           <input class="personal-info__input personal-info__input-age" type="number" name="age" id="age" placeholder="7" required>
         </li>
       </ul>
@@ -142,11 +149,15 @@
     <div class="main-footer__contacts contacts">
       <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
       <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      <img class="contacts__map" src="#" alt="Карта где находимся" width="320" height="362">
+      <picture>
+        <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="./images/map-desktop@1x.png 1x, ./images/map-desktop@2x.png 2x">
+        <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="./images/map-tablet@1x.png 1x, ./images/map-tablet@2x.png 2x">
+        <img class="contacts__map" src="./images/map-mobile@1x.png" srcset="./images/map-mobile@2x.png" width="320" height="362" alt="Карта где находимся.">
+      </picture>
     </div>
     <div class="main-footer__logo">
       <a class="main-footer__logo-text" href="index.html">
-        <img src="./images/logotype-text.svg" width="128" height="24" alt="Текст Cat Energy">
+        <img src="./images/logotype-text.svg" width="128" height="24" alt="Текст Cat Energy.">
       </a>
     </div>
     <div class="main-footer__social social">
