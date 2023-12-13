@@ -1,7 +1,8 @@
 /* GLOBAL */
 @import "./global/variables.scss";
-@import "./global/global.scss";
+@import "./global/mixins.scss";
 @import "./global/fonts.scss";
+@import "./global/common.scss";
 @import "./global/visually-hidden.scss";
 
 /* BLOCKS */
@@ -9,20 +10,26 @@
 @import "./blocks/page.scss";
 @import "./blocks/header.scss";
 @import "./blocks/main-header.scss";
+@import "./blocks/header-logo.scss";
+@import "./blocks/main-nav.scss";
 @import "./blocks/main-container.scss";
 @import "./blocks/main-footer.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/footer-logo.scss";
+@import "./blocks/social.scss";
 //index blocks//
 @import "./blocks/programs.scss";
 @import "./blocks/process.scss";
 @import "./blocks/example.scss";
 //catalog blocks//
 @import "./blocks/main-catalog.scss";
+@import "./blocks/more-item.scss";
+@import "./blocks/extra-item.scss";
+@import "./blocks/item-gift.scss";
 //form blocks//
 @import "./blocks/main-form.scss";
-
-
-
-
-
-
-
+@import "./blocks/user-data.scss";
+@import "./blocks/personal-info.scss";
+@import "./blocks/main-goal.scss";
+@import "./blocks/owner-contacts.scss";
+@import "./blocks/comment.scss";
