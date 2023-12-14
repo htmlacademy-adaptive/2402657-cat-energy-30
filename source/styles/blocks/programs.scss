@@ -1,27 +1,5 @@
-.programs__intro {
-  color: #ffffff;
-  text-align: center;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 36px;
-}
-
-.programs__slogan {
-  color: #ffffff;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 14px;
-  text-transform: uppercase;
-}
-
-.main-container__programs-search {
-  color: #ffffff;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-transform: uppercase;
+.programs__list {
+  list-style: none;
 }
 
 .programs__title {
@@ -40,11 +18,11 @@
   line-height: 18px;
 }
 
-.programs__more-info {
+.programs__link {
   color: #000000;
-  text-align: center;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
+  text-decoration: none;
 }
