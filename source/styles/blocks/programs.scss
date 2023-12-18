@@ -1,0 +1,28 @@
+.programs__list {
+  list-style: none;
+}
+
+.programs__title {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.programs__description {
+  font-family: "Lato", sans-serif;
+  color: #444444;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.programs__link {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
