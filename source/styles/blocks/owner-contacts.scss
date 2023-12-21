@@ -27,6 +27,8 @@
   text-transform: uppercase;
   width: 217px;
   height: 45px;
+  padding-left: 15px;
+  padding-right: 45px;
 
   @media (min-width: 768px) {
     font-size: 20px;
@@ -78,3 +80,29 @@
     font-size: 20px;
   }
 }
+
+.owner-contacts__item-wrapper-email {
+  position: relative;
+}
+
+.owner-contacts__item-wrapper-email:before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../images/icons/stack.svg#icon-envelope");
+
+  @media (min-width: 768px) {
+    top: 16px;
+    right: 316px;
+  }
+
+  @media (min-width: 1440px) {
+    top: 16px;
+    right: 1274px;
+  }
+
+}
+
