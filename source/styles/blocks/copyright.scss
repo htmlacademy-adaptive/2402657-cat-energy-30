@@ -9,3 +9,30 @@
 .copyright__link {
   text-decoration: none;
 }
+
+.copyright__text:hover {
+  color: #444444;
+}
+
+.copyright__text:focus {
+  color: #444444;
+}
+
+.copyright__text:active {
+  color: #444444;
+  opacity: 0.3;
+}
+
+.copyright__icon {
+  color: #666666;
+}
+
+.copyright__icon:hover,
+.copyright__icon:focus {
+  color: #68b738;
+}
+
+.copyright__icon:active {
+  color: #68b738;
+  opacity: 0.3;
+}

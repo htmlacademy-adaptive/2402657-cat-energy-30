@@ -18,26 +18,34 @@
   line-height: 18px;
 }
 
-.leaf {
+.process__item::before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px 32px;
+
+  @media (min-width: 768px) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.process__item--leaf::before {
   background-image: url("../../images/icons/stack.svg#icon-leaf");
-  width: 30px;
-  height: 32px;
 }
 
-.powder {
+.process__item--powder::before {
   background-image: url("../../images/icons/stack.svg#icon-powder");
-  width: 30px;
-  height: 32px;
 }
 
-.eat {
+.process__item--eat::before {
   background-image: url("../../images/icons/stack.svg#icon-eat");
-  width: 30px;
-  height: 32px;
 }
 
-.clock {
+.process__item--clock::before {
   background-image: url("../../images/icons/stack.svg#icon-clock");
-  width: 30px;
-  height: 32px;
 }
