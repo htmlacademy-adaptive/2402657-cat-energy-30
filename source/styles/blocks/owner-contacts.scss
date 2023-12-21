@@ -85,8 +85,8 @@
   position: relative;
 }
 
-.owner-contacts__item-wrapper-email:before {
-  content: '';
+.owner-contacts__item-wrapper-email::before {
+  content: "";
   position: absolute;
   top: 12px;
   right: 12px;
@@ -96,13 +96,11 @@
 
   @media (min-width: 768px) {
     top: 16px;
-    right: 316px;
+    right: 330px;
   }
 
   @media (min-width: 1440px) {
     top: 16px;
-    right: 1274px;
+    right: 1288px;
   }
-
 }
-
