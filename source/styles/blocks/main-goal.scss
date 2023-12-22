@@ -1,3 +1,19 @@
+.main-goal {
+  @media (min-width: 768px) {
+    box-sizing: border-box;
+    border: 1px solid #e7e7e7;
+    width: 628px;
+    height: 196px;
+  }
+
+  @media (min-width: 1440px) {
+    box-sizing: border-box;
+    border: 1px solid #e7e7e7;
+    width: 570px;
+    height: 196px;
+  }
+}
+
 .main-goal__list {
   list-style: none;
 }
