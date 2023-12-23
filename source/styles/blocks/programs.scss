@@ -2,6 +2,45 @@
   list-style: none;
 }
 
+.programs__item-wrapper::before {
+  content: "";
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.programs__item-wrapper--slim::before {
+  background-image: url("../../images/icons/stack.svg#cat-slim");
+  width: 36px;
+  height: 50px;
+
+  @media (min-width: 768px) {
+    width: 140px;
+    height: 194px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 70px;
+    height: 97px;
+  }
+}
+
+.programs__item-wrapper--pro::before {
+  background-image: url("../../images/icons/stack.svg#cat-pro");
+  width: 67px;
+  height: 28px;
+
+  @media (min-width: 768px) {
+    width: 268px;
+    height: 112px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 134px;
+    height: 56px;
+  }
+}
+
 .programs__title {
   color: #000000;
   font-size: 24px;
@@ -29,16 +68,4 @@
 
 .programs__link:active {
   opacity: 0.3;
-}
-
-.slim {
-  background-image: url("../../images/icons/stack.svg#cat-slim");
-  width: 36px;
-  height: 50px;
-}
-
-.pro {
-  background-image: url("../../images/icons/stack.svg#cat-pro");
-  width: 67px;
-  height: 28px;
 }
