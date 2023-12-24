@@ -3,6 +3,7 @@
 }
 
 .personal-info__label {
+  font-family: $primary-font;
   color: #444444;
   font-size: 16px;
   font-weight: 400;
@@ -11,9 +12,47 @@
 }
 
 .personal-info__input {
+  box-sizing: border-box;
   color: #444444;
+  font-family: $primary-font;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  border: 1px solid #e7e7e7;
+  height: 45px;
+  padding-left: 15px;
+  padding-right: 45px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    height: 52px;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 20px;
+    height: 52px;
+  }
+}
+
+.personal-info__input:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.personal-info__input:focus {
+  outline: none;
+  border: 2px solid #444444;
+}
+
+.personal-info__input::placeholder {
+  color: #444444;
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
 }

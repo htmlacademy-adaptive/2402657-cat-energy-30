@@ -23,4 +23,13 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.item__button:hover {
+  background-color: #5eaa2f;
+}
+
+.item__button:active {
+  opacity: 0.3;
 }

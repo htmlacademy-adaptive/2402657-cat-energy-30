@@ -21,4 +21,15 @@
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
+  width: 280px;
+  min-height: 40px;
+  background-color: #68b738;
+}
+
+.hero__button:hover {
+  background-color: #5eaa2f;
+}
+
+.hero__button:active {
+  opacity: 0.3;
 }

@@ -6,6 +6,15 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.user-data__button:hover {
+  background-color: #5eaa2f;
+}
+
+.user-data__button:active {
+  opacity: 0.3;
 }
 
 .user-data__disclaimer {
