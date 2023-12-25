@@ -27,6 +27,7 @@
 }
 
 .main-nav__list {
+  display: flex;
   font-size: 20px;
   font-weight: 400;
   line-height: 20px;
@@ -41,10 +42,12 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    padding: 39px 33px;
   }
 
   @media (min-width: $desktop-width) {
     color: #ffffff;
+    padding-top: 71px;
   }
 }
 
