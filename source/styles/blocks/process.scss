@@ -52,15 +52,15 @@
     background-image: url("../../images/icons/stack.svg#icon-leaf");
   }
 
-  .&--powder::before {
+  &--powder::before {
     background-image: url("../../images/icons/stack.svg#icon-powder");
   }
 
-  .&--eat::before {
+  &--eat::before {
     background-image: url("../../images/icons/stack.svg#icon-eat");
   }
 
-  .&--clock::before {
+  &--clock::before {
     background-image: url("../../images/icons/stack.svg#icon-clock");
   }
 }
