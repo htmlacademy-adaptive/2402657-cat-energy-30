@@ -1,0 +1,28 @@
+.logo {
+  display: inline-block;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo__img {
+    width: 174px;
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__img {
+    width: 202px;
+    height: auto;
+  }
+}
