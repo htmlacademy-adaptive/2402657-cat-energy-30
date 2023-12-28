@@ -2,6 +2,7 @@
   .main-footer__contacts-wrapper {
     display: flex;
     justify-content: space-between;
+    padding: 26px 20px;
   }
 
   .main-footer__logo {
@@ -11,6 +12,14 @@
   .main-footer__copyright {
     display: flex;
     justify-content: space-between;
+  }
+
+  .main-footer__wrapper {
+    padding: 40px 20px;
+  }
+
+  .main-footer__logo-icon {
+    margin-bottom: 20px;
   }
 }
 

@@ -1,5 +1,5 @@
 .hero-wrapper {
-  color: #65a93c;
+  background-color: #65a93c;
 }
 
 .hero__title {
@@ -37,11 +37,11 @@
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  min-width: 280px;
-  min-height: 40px;
+  width: 280px;
+  height: 40px;
   background-color: #68b738;
   padding: 10px 19px;
-  margin: 0 20px;
+  margin: 0 20px 20px;
 }
 
 .hero__button:hover {
