@@ -1,12 +1,16 @@
 .user-data__button {
   background-color: #68b738;
+  border: none;
   color: #ffffff;
   text-align: center;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  width: 100%;
+  min-height: 45px;
   cursor: pointer;
+  margin-bottom: 21px;
 }
 
 .user-data__button:hover {

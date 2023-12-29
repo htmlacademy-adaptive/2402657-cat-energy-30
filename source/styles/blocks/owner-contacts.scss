@@ -1,8 +1,15 @@
+.owner-contacts {
+  padding: 0;
+  margin: 0 0 24px;
+}
+
 .owner-contacts__title {
   color: #000000;
   font-size: 24px;
   font-weight: 400;
   line-height: 26px;
+  padding: 0;
+  margin-bottom: 35px;
 }
 
 .owner-contacts__list {
@@ -15,6 +22,7 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  margin-right: 13px;
 }
 
 .owner-contacts__input {
