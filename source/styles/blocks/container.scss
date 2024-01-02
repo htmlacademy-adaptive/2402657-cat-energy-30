@@ -10,6 +10,12 @@
     width: 768px;
     padding: 0 30px;
   }
+
+  .container-form {
+    box-sizing: border-box;
+    width: 768px;
+    padding: 0 70px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -17,4 +23,10 @@
     width: 1440px;
     padding: 0 40px;
   }
+
+  .container-form {
+    width: 1440px;
+    padding: 0 110px;
+  }
+
 }

@@ -56,6 +56,9 @@
 }
 
 @media (min-width: $tablet-width) {
+  .example {
+    background-color: #ffffff;
+  }
   .example-info {
     display: flex;
   }

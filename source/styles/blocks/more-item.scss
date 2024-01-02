@@ -34,3 +34,15 @@
 .more-item__button:active {
   background-color: #ebebeb;
 }
+
+@media (min-width: $tablet-width) {
+  .more-item {
+    //min-width: 324px;
+    border: 2px solid #F2F2F2;;
+    text-align: center;
+  }
+
+  .item__row {
+    border-bottom: 1px solid #444444;
+  }
+}

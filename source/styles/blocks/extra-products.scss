@@ -2,12 +2,6 @@
   margin-bottom: 19px;
 }
 
-@media (min-width: $desktop-width) {
-  .extra-products {
-    display: flex;
-  }
-}
-
 .extra-products__title {
   color: #000000;
   text-align: center;
@@ -75,4 +69,18 @@
 
 .extra-products__button:active {
   opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .extra-products__item {
+    border: 1px solid #CDCDCD;
+    margin-bottom: 0;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .extra-products {
+    display: flex;
+  }
 }
