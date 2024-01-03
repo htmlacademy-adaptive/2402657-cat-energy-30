@@ -1,5 +1,5 @@
 .programs {
-  margin: 0 0 20px;
+  margin: 20px 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -11,6 +11,7 @@
 @media (min-width: $desktop-width) {
   .programs {
     margin-bottom: 73px;
+    margin-top: 82px;
   }
 
   .programs__wrapper {

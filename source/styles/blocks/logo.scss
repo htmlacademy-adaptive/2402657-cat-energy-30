@@ -12,6 +12,10 @@
   }
 }
 
+.logo__img {
+  display: flex;
+}
+
 @media (min-width: $tablet-width) {
   .logo__img {
     width: 174px;
