@@ -1,7 +1,20 @@
 @media (min-width: $mobile-width) {
+  .main-catalog__title {
+    color: #000000;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    margin: 27px 0 41px;
+  }
+
+  .main-catalog__list {
+    list-style: none;
+  }
+
   .main-catalog__item-wrapper {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 17px;
   }
 }
 
@@ -17,18 +30,4 @@
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
   }
-}
-
-.main-catalog__title {
-  color: #000000;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 36px;
-  margin: 0;
-  padding-top: 27px;
-  padding-bottom: 41px;
-}
-
-.main-catalog__list {
-  list-style: none;
 }
