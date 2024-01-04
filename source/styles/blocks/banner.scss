@@ -40,8 +40,16 @@
 @media (min-width: $tablet-width) {
   .extra-products__banner {
     box-sizing: border-box;
-    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 57px;
     width: 707px;
     min-height: 200px;
+  }
+
+  .banner__text {
+    width: 161px;
+    text-align: left;
   }
 }

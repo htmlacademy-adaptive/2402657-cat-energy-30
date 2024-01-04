@@ -6,15 +6,23 @@
 .item__table {
   margin-bottom: 0;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+  }
 }
 
 .item__row {
   padding: 0;
-  //padding: 10px 0 8px;
-  //border-bottom: 1px solid #d9d9d9;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #444444;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 7px;
+    padding-bottom: 5px;
+  }
 }
 
 .item__title {
@@ -26,6 +34,14 @@
   width: 76px;
   margin-top: 0;
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    width: 135px;
+    margin-left: 58px;
+    text-align: center;
+  }
 }
 
 .item__info {
@@ -69,6 +85,10 @@
   min-height: 40px;
   text-transform: uppercase;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 2 * 37px);
+  }
 }
 
 .item__button:hover {

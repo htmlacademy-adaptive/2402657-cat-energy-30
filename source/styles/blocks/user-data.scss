@@ -1,3 +1,9 @@
+.user-data__wrapper--low {
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
 .user-data__button {
   background-color: #68b738;
   font-family: $primary-font;
@@ -12,6 +18,11 @@
   min-height: 45px;
   cursor: pointer;
   margin-bottom: 21px;
+
+  @media (min-width: 768px) {
+    width: 284px;
+    margin-right: 60px;
+  }
 }
 
 .user-data__button:hover {
@@ -30,4 +41,9 @@
   font-weight: 400;
   line-height: 16px;
   margin: 0 0 32px;
+
+  @media (min-width: 768px) {
+    margin-top: 15px;
+    align-self: center;
+  }
 }
