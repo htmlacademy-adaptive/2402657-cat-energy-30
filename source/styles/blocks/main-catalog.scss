@@ -10,23 +10,18 @@
   .main-catalog__list {
     list-style: none;
   }
-
-  .main-catalog__item-wrapper {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 17px;
-  }
 }
 
 @media (min-width: $tablet-width) {
   .main-catalog__list {
     display: grid;
     column-gap: 60px;
+    row-gap: 60px;
     grid-template-columns: repeat(2, 324px);
   }
 
-  .main-catalog__item-wrapper {
-    display: block;
+  .main-catalog__more {
+    margin-top: 70px; // отступ равен размеру градиента на карточках
   }
 }
 
