@@ -80,10 +80,35 @@
   text-transform: uppercase;
   text-decoration: none;
   margin-bottom: 18px;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    transform: translateY(-50%) translateY(4px);
+    width: 32px;
+    height: 10px;
+    margin-left: 15px;
+    background-image: url("../../images/icons/stack.svg#icon_arrow_short");
+    background-repeat: no-repeat;
+  }
+
+  &:hover::after {
+    background-image: url("../../images/icons/stack.svg#icon_arrow_long");
+  }
 }
 
 .programs__link:active {
   opacity: 0.3;
+
+  &:focus::after {
+    background-image: url("../../images/icons/stack.svg#icon_arrow_long");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .programs__link::after {
+    transform: translateY(-50%) translateY(3px);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -111,7 +136,7 @@
       border-radius: 50%;
       background-color: #68b738;
       top: 67px;
-      left: 329px;
+      left: 392px;
       transform: translateY(-25%);
     }
 
@@ -131,15 +156,15 @@
     &--weight-loss::after {
       background-image: url("../../images/icons/stack.svg#cat-slim");
       background-position: center;
-      top: 53px;
-      left: 370px;
+      top: 55px;
+      left: 424px;
     }
 
     &--weight-gain::after {
       background-image: url("../../images/icons/stack.svg#cat-pro");
       background-position: center;
       width: 268px;
-      left: 279px;
+      left: 360px;
       top: 68px;
     }
   }

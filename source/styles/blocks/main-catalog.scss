@@ -20,6 +20,11 @@
     grid-template-columns: repeat(2, 324px);
   }
 
+  .main-catalog__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
   .main-catalog__more {
     margin-top: 70px; // отступ равен размеру градиента на карточках
   }
