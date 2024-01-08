@@ -9,18 +9,21 @@
 }
 
 .social__item {
-  margin-right: 27px;
+  margin-right: 24px;
 
   &:last-child {
     margin-right: 0;
   }
 }
 
-.vk-icon {
-  display: inline-block;
-  mask-image: url("../../images/icons/stack.svg#icon-vk");
-  width: 27px;
+.social__link {
+  display: block;
+  width: 28px;
   height: 22px;
+}
+
+.vk-icon {
+  mask-image: url("../../images/icons/stack.svg#icon-vk");
   background-color: #666666;
 }
 
@@ -38,10 +41,7 @@
 }
 
 .youtube-icon {
-  display: inline-block;
   mask-image: url("../../images/icons/stack.svg#icon-youtube");
-  width: 24px;
-  height: 19px;
   background-color: #666666;
 }
 
@@ -59,10 +59,7 @@
 }
 
 .tg-icon {
-  display: inline-block;
   mask-image: url("../../images/icons/stack.svg#icon-telegram");
-  width: 20px;
-  height: 17px;
   background-color: #666666;
 }
 

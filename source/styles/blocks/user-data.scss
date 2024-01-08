@@ -1,7 +1,14 @@
-.user-data__wrapper-wrapper {
-  display: flex;
-  justify-content: space-between;
-  column-gap: 80px;
+@media (min-width: $desktop-width) {
+  .user-data__wrapper-wrapper {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 80px;
+  }
+
+  .user-data__column {
+    width: calc((100% - 80px) / 2); //80px отсуп между колонками
+    height: auto;
+  }
 }
 
 .user-data__wrapper--low {

@@ -36,7 +36,6 @@
 }
 
 .contacts__map {
-  display: none;
   position: relative;
   width: 100%;
   background-size: cover;
@@ -57,4 +56,8 @@
   width: 100%;
   height: 362px;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
