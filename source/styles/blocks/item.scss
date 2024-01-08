@@ -102,6 +102,16 @@
   white-space: nowrap;
 }
 
+.item__column--value-ruble {
+  display: inline-block;
+  width: 10px;
+  height: 9px;
+  background-image: url("../../images/icons/stack.svg#icon-ruble");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 .item__button {
   background-color: #68b738;
   border: none;
