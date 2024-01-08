@@ -14,7 +14,7 @@
 }
 
 .example__description {
-  font-family: "Lato", sans-serif;
+  font-family: $second-font;
   color: #444444;
   font-size: 14px;
   font-weight: 400;
@@ -42,7 +42,7 @@
   box-sizing: border-box;
   color: #000000;
   text-align: center;
-  font-family: "Oswald", sans-serif;
+  font-family: $primary-font;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
@@ -59,7 +59,7 @@
   top: -9px;
   color: #444444;
   text-align: center;
-  font-family: "Lato", sans-serif;
+  font-family: $second-font;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
@@ -75,7 +75,7 @@
 .example-info__cost {
   color: #000000;
   text-align: center;
-  font-family: "Oswald", sans-serif;
+  font-family: $primary-font;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
