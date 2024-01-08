@@ -1,3 +1,9 @@
+.user-data__wrapper-wrapper {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 80px;
+}
+
 .user-data__wrapper--low {
   @media (min-width: 768px) {
     display: flex;
@@ -22,6 +28,11 @@
   @media (min-width: 768px) {
     width: 284px;
     margin-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    margin-right: 80px;
   }
 }
 

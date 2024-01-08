@@ -32,7 +32,8 @@
 
 @media (min-width: $desktop-width) {
   .main-catalog__list {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    column-gap: 80px;
+    row-gap: 63px;
+    grid-template-columns: repeat(4, 245px);
   }
 }

@@ -5,6 +5,10 @@
 
 .owner-contacts__item {
   margin-bottom: 14px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .owner-contacts__item-wrapper {
@@ -23,6 +27,13 @@
 
 .owner-contacts__list {
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 80px;
+  }
 }
 
 .owner-contacts__label {

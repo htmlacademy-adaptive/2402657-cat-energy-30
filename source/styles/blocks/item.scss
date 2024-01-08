@@ -16,6 +16,10 @@
   @media (min-width: $tablet-width) {
     display: block;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 38px;
+  }
 }
 
 .item__pic {
@@ -23,7 +27,6 @@
   width: 50%;
 
   @media (min-width: $tablet-width) {
-    width: 200px;
     height: 210px;
     margin: 0 auto;
     padding-top: 10px;
@@ -40,10 +43,6 @@
 .item__table {
   margin-bottom: 0;
   width: 100%;
-
-  @media (min-width: $tablet-width) {
-    width: 250px;
-  }
 }
 
 .item__row {
