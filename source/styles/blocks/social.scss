@@ -1,12 +1,33 @@
+.social {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
 .social__list {
   list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.social__item {
+  margin-right: 24px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  display: block;
+  width: 28px;
+  height: 22px;
 }
 
 .vk-icon {
-  display: inline-block;
   mask-image: url("../../images/icons/stack.svg#icon-vk");
-  width: 27px;
-  height: 17px;
   background-color: #666666;
 }
 
@@ -24,10 +45,7 @@
 }
 
 .youtube-icon {
-  display: inline-block;
   mask-image: url("../../images/icons/stack.svg#icon-youtube");
-  width: 24px;
-  height: 19px;
   background-color: #666666;
 }
 
@@ -45,10 +63,7 @@
 }
 
 .tg-icon {
-  display: inline-block;
   mask-image: url("../../images/icons/stack.svg#icon-telegram");
-  width: 20px;
-  height: 17px;
   background-color: #666666;
 }
 

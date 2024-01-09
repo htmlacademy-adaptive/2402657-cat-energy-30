@@ -1,4 +1,7 @@
 .main-goal {
+  margin: 0 0 25px;
+  padding: 0;
+
   @media (min-width: 768px) {
     box-sizing: border-box;
     border: 1px solid #e7e7e7;
@@ -9,8 +12,6 @@
   @media (min-width: 1440px) {
     box-sizing: border-box;
     border: 1px solid #e7e7e7;
-    width: 570px;
-    height: 196px;
   }
 }
 
@@ -18,10 +19,55 @@
   list-style: none;
 }
 
-.main-goal__input {
+.main-goal__item {
+  @media (min-width: 768px) {
+    margin-bottom: 23px;
+  }
+}
+
+
+//делаю кастомные радиокнопки
+.main-goal__label {
   color: #444444;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  padding-left: 45px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding-left: 20px;
+  }
+}
+
+.main-goal__input {
+  position: absolute; //убирает пробел перед лейблом
+  appearance: none;
+}
+
+.main-goal__input-custom {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  margin-top: 8px;
+  margin-left: -45px;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+//checked
+.main-goal__input:checked + .main-goal__input-custom {
+  background-image: url("../../images/icons/stack.svg#radiobutton-active");
+}
+
+//disabled
+.main-goal__input:disabled + .main-goal__input-custom {
+  background-image: url("../../images/icons/stack.svg#radiobutton-disabled");
 }

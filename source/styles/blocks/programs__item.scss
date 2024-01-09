@@ -1,0 +1,209 @@
+.programs__item-category {
+  display: block;
+  box-sizing: border-box;
+  min-width: 280px;
+  min-height: 266px;
+  padding: 21px 33px 18px 20px;
+  margin: 0 0 18px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 30px;
+  }
+}
+
+.programs__item {
+  background-color: #f2f2f2;
+  padding-top: 30px;
+  padding-bottom: 18px;
+  color: #000000;
+}
+
+.programs__title {
+  font-size: 24px;
+  text-transform: uppercase;
+  position: relative;
+  line-height: 37px;
+  margin: 0 0 29px 72px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #68b738;
+    top: 6px;
+    left: -71px;
+    transform: translateY(-25%);
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: -69px;
+    transform: translateY(-25%);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--weight-loss::after {
+    background-image: url("../../images/icons/stack.svg#cat-slim");
+    background-position: center;
+    top: 4px;
+    left: -68px;
+  }
+
+  &--weight-gain::after {
+    background-image: url("../../images/icons/stack.svg#cat-pro");
+    background-position: center;
+    width: 67px;
+    left: -78px;
+    top: 6px;
+  }
+}
+
+.programs__description {
+  font-family: $second-font;
+  color: #444444;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 0 0 27px;
+}
+
+.programs__link {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: 18px;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    transform: translateY(-50%) translateY(4px);
+    width: 32px;
+    height: 12px;
+    margin-left: 17px;
+    background-image: url("../../images/icons/stack.svg#icon_arrow_short");
+    background-repeat: no-repeat;
+  }
+
+  &:hover::after {
+    background-image: url("../../images/icons/stack.svg#icon_arrow_long");
+  }
+}
+
+.programs__link:active {
+  opacity: 0.3;
+
+  &:focus::after {
+    background-image: url("../../images/icons/stack.svg#icon_arrow_long");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .programs__link::after {
+    transform: translateY(-50%) translateY(3px);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .programs__item-category {
+    width: 708px;
+    height: 372px;
+  }
+
+  .programs__item {
+    padding-top: 77px;
+    padding-left: 53px;
+  }
+
+  .programs__title {
+    margin: 0 0 24px 0;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: #68b738;
+      top: 67px;
+      left: 392px;
+      transform: translateY(-25%);
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 140px;
+      height: 194px;
+      top: 67px;
+      left: 329px;
+      transform: translateY(-25%);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &--weight-loss::after {
+      background-image: url("../../images/icons/stack.svg#cat-slim");
+      background-position: center;
+      top: 55px;
+      left: 424px;
+    }
+
+    &--weight-gain::after {
+      background-image: url("../../images/icons/stack.svg#cat-pro");
+      background-position: center;
+      width: 268px;
+      left: 360px;
+      top: 68px;
+    }
+  }
+
+  .programs__description {
+    width: 340px;
+    min-height: 96px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 47px;
+  }
+
+  .programs__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__item-category {
+    width: 570px;
+    height: 374px;
+  }
+
+  .programs__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .programs__item {
+    width: 570px;
+    margin-right: 80px;
+  }
+
+  //&:nth-child(2n) {
+  //  margin-right: 0;
+  //}
+}

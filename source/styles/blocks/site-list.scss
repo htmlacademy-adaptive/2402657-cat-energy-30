@@ -1,12 +1,59 @@
 .site-list {
-  font-weight: 400;
+  list-style: none;
 }
 
-/* стилизация для ссылок */
-.site-list a {
-  color: #000000;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 20px;
-  text-transform: uppercase;
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  .site-list__item {
+    margin-left: 35px;
+  }
+
+  .site-list__link {
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    color: #000000;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .site-list__link.site-list__link--current::after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #68b738;
+    right: 0;
+    bottom: -5px;
+    left: 0;
+    height: 4px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__link--index {
+    color: #ffffff;
+    font-size: 20px;
+  }
+
+  .site-list__link {
+    font-size: 20px;
+  }
+
+  .site-list__link.site-list__link--current.site-list__link--index::after {
+    border-bottom: 2px solid #ffffff;
+  }
 }

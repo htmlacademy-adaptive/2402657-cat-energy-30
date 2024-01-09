@@ -1,43 +1,159 @@
+.example {
+  background-color: #eaeaea;
+  padding: 20px 0 36px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+  }
+}
+
 .example__title {
   color: #000000;
-  text-align: center;
+  text-align: left;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
+  margin: 0 0 40px;
 }
 
-.example__text {
-  font-family: "Lato", sans-serif;
+.example__description {
+  font-family: $second-font;
   color: #444444;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+  margin: 0 0 18px;
 }
 
-.example__number {
+.example-info__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    min-width: 367px;
+  }
+}
+
+.example-info__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc((100% - 32px) / 2);
+
+  @media (min-width: $tablet-width) {
+    width: calc((100% - 43px) / 2);
+  }
+}
+
+.example-info__text {
+  box-sizing: border-box;
   color: #000000;
   text-align: center;
+  font-family: $primary-font;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
+  padding: 15px 14px 17px;
   text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
-.example__description {
-  font-family: "Lato", sans-serif;
-  text-align: center;
+.example-info__caption {
+  box-sizing: border-box;
+  position: relative;
+  top: -9px;
   color: #444444;
+  text-align: center;
+  font-family: $second-font;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+  width: calc(100% - 18px * 2);
+  background-color: #eaeaea;
+  padding: 0 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+    padding: 0 10px;
+    width: calc(100% - 17px);
+  }
 }
 
-.example__expenses,
-.example__expenses-amount {
+.example-info__cost {
   color: #000000;
   text-align: center;
+  font-family: $primary-font;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  margin-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
+}
+
+.example-info__number {
+  margin-left: 2px;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    background-color: #ffffff;
+  }
+
+  .example-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
+
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 55px;
+  }
+
+  .example-info__number {
+    display: block;
+    margin-top: 9px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__inner {
+    width: 435px;
+  }
+
+  .example__title {
+    margin-bottom: 146px;
+    padding-top: 56px;
+  }
+
+  .example__description {
+    margin-bottom: 68px;
+    padding-right: 0;
+  }
 }

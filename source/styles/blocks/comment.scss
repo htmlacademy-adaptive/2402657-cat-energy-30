@@ -1,24 +1,48 @@
+.comment {
+  display: flex;
+  margin: 0 0 23px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+}
+
 .comment__title {
   font-family: $primary-font;
   color: #000000;
   font-size: 24px;
   font-weight: 400;
   line-height: 26px;
-}
+  margin-bottom: 38px;
 
-.comment__text {
-  font-family: $primary-font;
-  color: #000000;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 26px;
-
-  @media (min-width: 768px) {
-    font-size: 20px;
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 
-.comment__text::placeholder {
+.comment__input--text {
+  box-sizing: border-box;
+  min-height: 150px;
+  flex-grow: 1;
+  font-family: $primary-font;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  border-color: #e7e7e7;
+  padding: 14px 14px;
+
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 11px 20px;
+  }
+}
+
+.comment__input--text::placeholder {
   color: #444444;
   font-family: $primary-font;
   font-size: 16px;

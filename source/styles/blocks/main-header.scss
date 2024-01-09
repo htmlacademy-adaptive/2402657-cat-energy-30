@@ -1,8 +1,27 @@
-.logo__icon:hover,
-.logo__icon:focus {
-  opacity: 0.8;
+.main-header {
+  padding: 14px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 30px;
+  }
 }
 
-.logo__icon:active {
-  opacity: 0.6;
+.main-header--index {
+  //padding: 14px 0;
+  position: relative;
+
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      display: block;
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 50%;
+      background-color: #68b738;
+    }
+  }
 }

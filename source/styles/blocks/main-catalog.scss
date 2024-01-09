@@ -1,10 +1,111 @@
-.main-catalog__title {
-  color: #000000;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 36px;
+@media (min-width: $mobile-width) {
+  .main-catalog__title {
+    color: #000000;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    margin: 27px 0 41px;
+  }
+
+  .main-catalog__list {
+    list-style: none;
+  }
 }
 
-.main-catalog__list {
-  list-style: none;
+@media (min-width: $tablet-width) {
+  .main-catalog__list {
+    display: grid;
+    column-gap: 60px;
+    row-gap: 66px;
+    grid-template-columns: repeat(2, 324px);
+  }
+
+  .main-catalog__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 40px 0 89px;
+  }
+
+  .main-catalog__more {
+    margin-top: 70px; // отступ равен размеру градиента на карточках
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-catalog__list {
+    column-gap: 80px;
+    row-gap: 63px;
+    grid-template-columns: repeat(4, 245px);
+  }
+}
+
+//cтили для баннера
+.main-catalog__banner-wrapper {
+  box-sizing: border-box;
+  position: relative;
+  background-color: #68b738;
+  padding: 187px 61px 43px 58px;
+  margin-bottom: 35px;
+}
+
+.main-catalog__banner-text {
+  color: #ffffff;
+  text-align: center;
+  font-family: $second-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 auto;
+}
+
+.main-catalog__banner-text::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../images/icons/stack.svg#icon-gift");
+  width: 78px;
+  height: 80px;
+  top: 58px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: $tablet-width) {
+  .main-catalog__banner-wrapper {
+    width: 100%;
+    min-height: 200px;
+    padding: 72px 125px 60px 77px;
+    margin-bottom: 75px;
+  }
+
+  .main-catalog__banner-text {
+    text-align: left;
+    width: 161px;
+    margin: 0 0 0 auto;
+  }
+
+  .main-catalog__banner-text::before {
+    width: 80px;
+    height: 83px;
+    top: 57px;
+    left: 117px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-catalog__banner-wrapper {
+    padding: 187px 42px 43px;
+    margin-top: 112px;
+    margin-bottom: 0;
+  }
+
+  .main-catalog__banner-text {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .main-catalog__banner-text::before {
+    top: 57px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
