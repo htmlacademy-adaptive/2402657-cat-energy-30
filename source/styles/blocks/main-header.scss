@@ -1,8 +1,23 @@
-.logo__icon:hover,
-.logo__icon:focus {
-  opacity: 0.8;
-}
+.main-header--index {
+  padding: 14px 0;
+  position: relative;
 
-.logo__icon:active {
-  opacity: 0.6;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 25px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      display: block;
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 50%;
+      background-color: #68b738;
+    }
+  }
 }

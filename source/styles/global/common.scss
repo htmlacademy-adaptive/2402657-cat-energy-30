@@ -1,11 +1,11 @@
 .page {
-  background-color: #2e8b57;
   color: #000000;
   font-size: 24px;
   line-height: 1.5;
 }
 
 body {
+  margin: 0;
   font-family: $primary-font;
 }
 
@@ -22,4 +22,13 @@ input[type="number"],
 input[type="number"]:hover,
 input[type="number"]:focus {
   appearance: textfield;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+//фиксит влияние line-height на картинках
+picture {
+  display: flex;
 }

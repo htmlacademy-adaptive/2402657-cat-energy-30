@@ -1,33 +1,96 @@
-.more-item__title {
-  color: #111111;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-transform: uppercase;
-}
+.more-item {
+  box-sizing: border-box;
 
-.more-item__subtitle {
-  color: #444444;
-  text-align: center;
-  font-family: "Lato", sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-}
+  @media (min-width: $tablet-width) {
+    border: 2px solid #f2f2f2;
+    text-align: center;
+    padding: 50px 37px 36px;
+  }
 
-.more-item__button {
-  background-color: #f2f2f2;
-  color: #444444;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-transform: uppercase;
-  cursor: pointer;
-}
+  .more-item__wrapper {
+    padding: 77px 20px 17px;
 
-.more-item__button:hover,
-.more-item__button:active {
-  background-color: #ebebeb;
+    @media (min-width: $tablet-width) {
+      display: inline-block;
+      padding-top: 113px;
+      margin-bottom: 62px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 115px;
+      padding-right: 0;
+      padding-left: 0;
+      margin-bottom: 79px;
+    }
+  }
+
+  .more-item__title {
+    position: relative;
+    color: #111111;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin: 0 0 9px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 24px;
+      width: 134px;
+      margin: 0 auto 23px;
+    }
+  }
+
+  .more-item__title::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../images/icons/stack.svg#icon-plus");
+    width: 30px;
+    height: 30px;
+    top: -54px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (min-width: $tablet-width) {
+      width: 60px;
+      height: 60px;
+      top: -109px;
+    }
+  }
+
+  .more-item__subtitle {
+    color: #444444;
+    text-align: center;
+    font-family: $second-font;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+
+  .more-item__button {
+    background-color: #f2f2f2;
+    font-family: $primary-font;
+    border: none;
+    color: #444444;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    width: 100%;
+    min-height: 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .more-item__button:hover,
+  .more-item__button:active {
+    background-color: #ebebeb;
+  }
 }
