@@ -26,8 +26,20 @@
   margin: 0;
   padding: 0;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+
   @media (min-width: $desktop-width) {
     max-width: 895px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-products__wrapper-common {
+    display: flex;
+    column-gap: 81px;
   }
 }
 
@@ -53,7 +65,6 @@
     margin-bottom: 25px;
   }
 }
-
 
 .extra-products__name {
   color: #222222;
