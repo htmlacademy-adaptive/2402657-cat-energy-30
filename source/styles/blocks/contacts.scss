@@ -44,8 +44,10 @@
 .contacts__map-wrapper {
   display: block;
   width: 100%;
-  height: 362px;
+  min-height: 362px;
   position: relative;
+
+
 }
 
 .contacts__map-interactive {

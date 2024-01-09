@@ -10,6 +10,16 @@
   display: flex;
   align-self: center;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 23px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__link:last-child {
+    margin-right: 0;
+  }
 }
 
 .copyright__text:hover {
