@@ -5,6 +5,10 @@
   min-height: 266px;
   padding: 21px 33px 18px 20px;
   margin: 0 0 18px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 30px;
+  }
 }
 
 .programs__item {
@@ -174,6 +178,7 @@
     min-height: 96px;
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 47px;
   }
 
   .programs__link {

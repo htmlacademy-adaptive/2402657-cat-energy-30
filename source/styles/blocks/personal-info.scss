@@ -25,6 +25,10 @@
   line-height: 18px;
   text-transform: uppercase;
   margin-right: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .personal-info__input {

@@ -24,6 +24,11 @@
   line-height: 26px;
   padding: 0;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .owner-contacts__list {
@@ -44,6 +49,10 @@
   line-height: 18px;
   text-transform: uppercase;
   margin-right: 8px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .owner-contacts__input {

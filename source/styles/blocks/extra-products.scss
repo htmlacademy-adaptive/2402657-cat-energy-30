@@ -1,6 +1,10 @@
 .extra-products {
   margin-top: 51px;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 69px;
+  }
 }
 
 .extra-products__wrapper {
@@ -24,7 +28,7 @@
     font-size: 36px;
     line-height: 36px;
     margin-top: 0;
-    margin-bottom: 80px;
+    margin-bottom: 75px;
   }
 }
 
@@ -34,7 +38,7 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 70px;
+    margin-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {

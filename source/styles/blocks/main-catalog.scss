@@ -16,13 +16,14 @@
   .main-catalog__list {
     display: grid;
     column-gap: 60px;
-    row-gap: 60px;
+    row-gap: 66px;
     grid-template-columns: repeat(2, 324px);
   }
 
   .main-catalog__title {
     font-size: 60px;
     line-height: 60px;
+    margin: 40px 0 89px;
   }
 
   .main-catalog__more {

@@ -15,6 +15,11 @@
   font-weight: 400;
   line-height: 26px;
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .comment__input--text {

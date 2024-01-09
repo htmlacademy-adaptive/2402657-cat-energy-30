@@ -1,6 +1,10 @@
 .example {
   background-color: #eaeaea;
   padding: 20px 0 36px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+  }
 }
 
 .example__title {
@@ -35,6 +39,10 @@
   flex-direction: column;
   align-items: center;
   width: calc((100% - 32px) / 2);
+
+  @media (min-width: $tablet-width) {
+    width: calc((100% - 43px) / 2);
+  }
 }
 
 .example-info__text {
@@ -50,6 +58,11 @@
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example-info__caption {
@@ -67,7 +80,11 @@
   padding: 0 10px;
 
   @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
     background-color: #ffffff;
+    padding: 0 10px;
+    width: calc(100% - 17px);
   }
 }
 
@@ -82,6 +99,8 @@
   margin-top: 10px;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
     text-align: right;
   }
 }
