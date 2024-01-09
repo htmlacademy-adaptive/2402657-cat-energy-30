@@ -1,12 +1,19 @@
 .extra-products {
+  margin-top: 51px;
   margin-bottom: 35px;
 }
 
+.extra-products__wrapper {
+  margin-bottom: 52px;
+}
+
 .extra-products__item {
-  margin-bottom: 19px;
+  margin-bottom: 32px;
 }
 
 .extra-products__title {
+  margin-top: 0;
+  margin-bottom: 49px;
   color: #000000;
   text-align: left;
   font-size: 24px;
@@ -34,6 +41,10 @@
     max-width: 895px;
     margin-bottom: 0;
   }
+}
+
+.extra-products__item-wrapper {
+  margin-bottom: 13px;
 }
 
 @media (min-width: $desktop-width) {

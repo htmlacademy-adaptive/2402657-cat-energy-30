@@ -1,6 +1,6 @@
 .example {
   background-color: #eaeaea;
-  padding: 17px 0 36px;
+  padding: 20px 0 36px;
 }
 
 .example__title {
@@ -10,7 +10,6 @@
   font-weight: 400;
   line-height: 40px;
   margin: 0 0 40px;
-  padding-right: 75px;
 }
 
 .example__description {
@@ -19,7 +18,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  margin: 0 0 20px;
+  margin: 0 0 18px;
 }
 
 .example-info__wrapper {
@@ -80,10 +79,15 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  margin-top: 10px;
 
   @media (min-width: $tablet-width) {
     text-align: right;
   }
+}
+
+.example-info__number {
+  margin-left: 2px;
 }
 
 @media (min-width: $tablet-width) {

@@ -92,8 +92,19 @@
 
 @media (min-width: $desktop-width) {
   .main-catalog__banner-wrapper {
-    padding: 0;
+    padding: 187px 42px 43px;
     margin-top: 112px;
     margin-bottom: 0;
+  }
+
+  .main-catalog__banner-text {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .main-catalog__banner-text::before {
+    top: 57px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
