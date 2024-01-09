@@ -19,6 +19,7 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 93px;
   }
 }
 
@@ -32,10 +33,11 @@
   font-weight: 400;
   line-height: 18px;
   border-color: #e7e7e7;
-  padding: 14px 14px;
+  padding: 12px 14px;
 
 
   @media (min-width: 768px) {
+    min-height: 170px;
     font-size: 20px;
     line-height: 20px;
     padding: 11px 20px;

@@ -1,6 +1,11 @@
 .main-form__title-wrapper {
   padding-top: 27px;
   padding-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 65px;
+  }
 }
 
 
@@ -14,6 +19,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin: 0 0 55px;
   }
 }
 

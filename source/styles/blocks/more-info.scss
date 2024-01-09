@@ -1,6 +1,10 @@
 .more-info {
   padding: 0;
-  margin: 0 0 28px;
+  margin: 0 0 26px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 19px;
+  }
 }
 
 .more-info__list {
@@ -28,6 +32,7 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 57px;
   }
 }
 
@@ -36,7 +41,7 @@
   margin-bottom: 6px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 32px;
+    margin-bottom: 37px;
   }
 }
 
@@ -50,7 +55,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    padding-left: 20px;
+    padding-left: 62px;
   }
 }
 
@@ -61,16 +66,23 @@
 
 .more-info__input-custom {
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   background-color: #ffffff;
   border: 1px solid #cdcdcd;
-  margin-top: 8px;
+  margin-top: 5px;
   margin-left: -45px;
   cursor: pointer;
 
   &:disabled {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-left: -62px;
+    width: 40px;
+    height: 40px;
   }
 }
 
