@@ -76,14 +76,14 @@
 
 //checked
 .more-info__input:checked + .more-info__input-custom {
-  width: 30px;
-  height: 30px;
   background-image: url("../../images/icons/stack.svg#tick-active-hover");
+  background-size: 26px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 //disabled
 .more-info__input:disabled + .more-info__input-custom {
-  width: 30px;
-  height: 30px;
+
   background-image: url("../../images/icons/stack.svg#tick-disabled");
 }

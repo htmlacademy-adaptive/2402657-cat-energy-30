@@ -65,9 +65,15 @@
 //checked
 .main-goal__input:checked + .main-goal__input-custom {
   background-image: url("../../images/icons/stack.svg#radiobutton-active");
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 //disabled
 .main-goal__input:disabled + .main-goal__input-custom {
   background-image: url("../../images/icons/stack.svg#radiobutton-disabled");
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
