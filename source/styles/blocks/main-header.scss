@@ -4,10 +4,13 @@
   @media (min-width: $tablet-width) {
     padding: 25px 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 110px;
+  }
 }
 
 .main-header--index {
-  //padding: 14px 0;
   position: relative;
 
 

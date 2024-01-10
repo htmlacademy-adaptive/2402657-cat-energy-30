@@ -7,7 +7,6 @@
 
   .user-data__column {
     width: calc((100% - 80px) / 2); //80px отсуп между колонками
-    height: auto;
   }
 }
 
@@ -42,7 +41,7 @@
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    margin-right: 80px;
+    margin-right: 77px;
   }
 }
 
@@ -63,9 +62,13 @@
   line-height: 16px;
   margin: 0 0 32px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     margin-top: 6px;
     align-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 10px;
   }
 }

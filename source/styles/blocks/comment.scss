@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
 }
 
 .comment__title {
@@ -20,6 +24,10 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
   }
 }
 

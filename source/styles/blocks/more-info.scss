@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     margin: 0 0 19px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 28px;
+  }
 }
 
 .more-info__list {
@@ -17,7 +21,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 275px);
+    column-gap: 49px;
   }
 }
 

@@ -6,6 +6,11 @@
     padding-top: 40px;
     padding-bottom: 65px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 21px;
+    padding-bottom: 65px;
+  }
 }
 
 

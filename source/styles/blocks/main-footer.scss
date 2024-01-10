@@ -58,6 +58,10 @@
     @media (min-width: $tablet-width) {
       padding: 55px 30px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding: 66px 110px;
+    }
   }
 
   .main-footer__logo-icon {
@@ -104,4 +108,21 @@
 
 .main-footer__logo-icon:active {
   opacity: 0.6;
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__contacts {
+    position: relative;
+  }
+
+  .main-footer__contacts-wrapper {
+    box-sizing: border-box;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    width: 565px;
+    z-index: 1;
+    background-color: #ffffff;
+    padding: 60px 88px 60px 80px;
+  }
 }
