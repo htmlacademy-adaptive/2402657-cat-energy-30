@@ -19,7 +19,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 38px;
+    margin-bottom: 33px;
   }
 }
 
@@ -77,6 +77,10 @@
     margin: 17px auto;
     margin-bottom: 14px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 6px;
   }
 }
 

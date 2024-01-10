@@ -17,10 +17,10 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 115px;
+      padding-top: 104px;
       padding-right: 0;
       padding-left: 0;
-      margin-bottom: 79px;
+      margin-bottom: 75px;
     }
   }
 
@@ -40,6 +40,10 @@
       width: 134px;
       margin: 0 auto 23px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 25px;
+    }
   }
 
   .more-item__title::before {
@@ -56,6 +60,10 @@
       width: 60px;
       height: 60px;
       top: -109px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -99px;
     }
   }
 

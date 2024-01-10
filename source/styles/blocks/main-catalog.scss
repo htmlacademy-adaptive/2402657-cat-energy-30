@@ -34,8 +34,12 @@
 @media (min-width: $desktop-width) {
   .main-catalog__list {
     column-gap: 80px;
-    row-gap: 63px;
+    row-gap: 68px;
     grid-template-columns: repeat(4, 245px);
+  }
+
+  .main-catalog__title {
+    margin-top: 19px;
   }
 }
 
@@ -95,7 +99,7 @@
   .main-catalog__banner-wrapper {
     padding: 187px 42px 43px;
     margin-top: 112px;
-    margin-bottom: 52px;
+    margin-bottom: 56px;
   }
 
   .main-catalog__banner-text {
