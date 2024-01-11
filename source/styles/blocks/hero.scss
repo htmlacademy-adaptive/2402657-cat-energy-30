@@ -43,6 +43,8 @@
     top: 0;
     background-color: #68b738;
     background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85) 100%), url("../../images/mobile-index-background.png");
+    background-repeat: no-repeat;
+    background-position: center;
 
     @media (min-width: $tablet-width) {
       display: none;
