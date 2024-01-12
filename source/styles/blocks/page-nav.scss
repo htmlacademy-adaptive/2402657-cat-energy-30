@@ -1,5 +1,6 @@
 .page-nav {
   display: flex;
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {

@@ -19,7 +19,7 @@
       width: 100%;
       transform: translateX(-50%);
       top: 42px;
-      border: 1px solid #d9d9d9;
+      border-bottom: 1px solid #d9d9d9;
 
       @media (min-width: $tablet-width) {
         display: none;
@@ -80,7 +80,7 @@
       position: absolute;
       width: 100%;
       top: 40px;
-      border: 1px solid #d9d9d9;
+      border-bottom: 1px solid #d9d9d9;
 
       @media (min-width: $tablet-width) {
         display: none;
