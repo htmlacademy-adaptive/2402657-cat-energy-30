@@ -11,8 +11,13 @@
 }
 
 .user-data__wrapper--low {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: flex;
+    margin-bottom: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 59px;
   }
 }
 
