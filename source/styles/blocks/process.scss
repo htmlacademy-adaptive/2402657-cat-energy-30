@@ -68,10 +68,23 @@
 
 @media (min-width: $tablet-width) {
   .process {
+    position: relative;
     margin-bottom: 47px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      right: 0;
+      height: 2px;
+      bottom: -53px;
+      width: 768px;
+      background: #d9d9d9;
+    }
   }
 
   .process__list {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     counter-reset: number 0;
@@ -138,6 +151,10 @@
 @media (min-width: $desktop-width) {
   .process {
     margin-bottom: 5px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .process__item {

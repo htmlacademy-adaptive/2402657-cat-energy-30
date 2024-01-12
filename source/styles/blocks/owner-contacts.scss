@@ -30,6 +30,7 @@
 }
 
 .owner-contacts__title {
+  position: relative;
   color: #000000;
   font-size: 24px;
   font-weight: 400;
@@ -37,10 +38,52 @@
   padding: 0;
   margin-bottom: 35px;
 
+  &::after {
+    position: absolute;
+    content: "";
+    right: -20px;
+    height: 2px;
+    bottom: 34px;
+    width: 93px;
+    background: #68b738;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 75px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: -70px;
+      height: 2px;
+      bottom: 13px;
+      width: 30px;
+      background: #68b738;
+    }
+
+    &::after {
+      right: -184px;
+      height: 2px;
+      bottom: 13px;
+      width: 146px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .owner-contacts__title::before {
+    left: -110px;
+    bottom: 15px;
+    width: 70px;
+  }
+
+  .owner-contacts__title::after {
+    left: 552px;
+    height: 2px;
+    bottom: 15px;
+    width: 778px;
   }
 }
 

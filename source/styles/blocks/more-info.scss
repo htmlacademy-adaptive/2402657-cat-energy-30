@@ -28,6 +28,7 @@
 }
 
 .more-info__title {
+  position: relative;
   color: #000000;
   font-size: 24px;
   font-weight: 400;
@@ -35,14 +36,53 @@
   padding: 0;
   margin-bottom: 27px;
 
+  &::after {
+    position: absolute;
+    content: "";
+    left: 161px;
+    height: 2px;
+    bottom: 11px;
+    width: 139px;
+    background: #68b738;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 55px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: -70px;
+      height: 2px;
+      bottom: 12px;
+      width: 30px;
+      background: #68b738;
+    }
+
+    &::after {
+      left: 252px;
+      height: 2px;
+      bottom: 12px;
+      width: 446px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 55px;
+
+    &::before {
+      left: -110px;
+      bottom: 11px;
+      width: 70px;
+    }
+
+    &::after {
+      left: 252px;
+      bottom: 12px;
+      width: 1078px;
+    }
   }
 }
 
