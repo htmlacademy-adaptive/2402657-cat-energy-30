@@ -25,54 +25,15 @@
   line-height: 26px;
   margin-bottom: 38px;
 
-  &::after {
-    position: absolute;
-    content: "";
-    left: 141px;
-    height: 2px;
-    bottom: 11px;
-    width: 159px;
-    background: #68b738;
-  }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 93px;
-
-    &::before {
-      position: absolute;
-      content: "";
-      left: -70px;
-      height: 2px;
-      bottom: 10px;
-      width: 30px;
-      background: #68b738;
-    }
-
-    &::after {
-      left: 222px;
-      height: 2px;
-      bottom: 10px;
-      width: 476px;
-    }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 82px;
-
-    &::before {
-      left: -110px;
-      bottom: 11px;
-      width: 70px;
-    }
-
-    &::after {
-      left: 222px;
-      height: 2px;
-      bottom: 11px;
-      width: 1108px;
-    }
   }
 }
 
