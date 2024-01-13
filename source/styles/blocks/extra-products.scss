@@ -17,6 +17,7 @@
 
 .extra-products__item {
   margin-bottom: 32px;
+  border-top: 1px solid #cdcdcd;
 }
 
 .extra-products__title {
@@ -212,6 +213,7 @@
   .extra-products__item {
     margin-bottom: 0;
     padding: 26px 38px;
+    border: none;
   }
 
   .extra-products__item:nth-child(n+1) {
