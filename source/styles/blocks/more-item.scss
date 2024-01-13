@@ -1,5 +1,8 @@
 .more-item {
   box-sizing: border-box;
+  padding-bottom: 25px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
 
   @media (min-width: $tablet-width) {
     border: 2px solid #f2f2f2;

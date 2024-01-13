@@ -1,6 +1,16 @@
 .extra-products {
+  position: relative;
   margin-top: 51px;
   margin-bottom: 35px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 20px;
+    border-bottom: 2px solid #68b738;
+    z-index: -1;
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: 69px;
@@ -16,11 +26,13 @@
 }
 
 .extra-products__item {
+  padding-top: 13px;
   margin-bottom: 32px;
   border-top: 1px solid #cdcdcd;
 }
 
 .extra-products__title {
+  display: inline-block;
   position: relative;
   margin-top: 0;
   margin-bottom: 49px;
@@ -29,39 +41,18 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
-
-  &::after {
-    position: absolute;
-    content: "";
-    right: -20px;
-    height: 2px;
-    bottom: 9px;
-    width: 54px;
-    background: #68b738;
-  }
+  max-width: 226px;
+  padding: 0 20px;
+  margin-left: -20px;
+  background-color: #ffffff;
+  word-break: break-word;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin-top: 0;
-    margin-left: 40px;
-    margin-bottom: 79px;
-
-    &::before {
-      position: absolute;
-      content: "";
-      left: -70px;
-      height: 2px;
-      bottom: 12px;
-      width: 30px;
-      background: #68b738;
-    }
-
-    &::after {
-      right: -30px;
-      bottom: 12px;
-      width: 320px;
-    }
+    max-width: 400px;
+    margin: 0 0 79px;
+    padding: 0 40px;
   }
 }
 
