@@ -10,6 +10,13 @@
   .main-catalog__list {
     list-style: none;
   }
+
+  .main-catalog__more {
+    margin: 0 -20px;
+    padding: 25px 20px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -27,7 +34,8 @@
   }
 
   .main-catalog__more {
-    margin-top: 70px; // отступ равен размеру градиента на карточках
+    padding: 50px 20px 40px;
+    margin: 70px 0 0; // отступ равен размеру градиента на карточках
   }
 }
 
