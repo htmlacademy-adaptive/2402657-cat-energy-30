@@ -63,9 +63,24 @@
   padding: 187px 61px 43px 58px;
   margin-bottom: 35px;
   background-color: #68b738;
-  background-image: linear-gradient(to right, #68b738 100%, #68b738 100%), url("../../images/cat-bag-small.png");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/gift-case@1x.jpg") type("image/jpeg") 1x, url("../../images/gift-case@2x.jpg") type("image/jpeg") 2x);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: auto 100%, auto 100%;
+  background-position: center, center;
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/gift-case-tablet@1x.jpg") type("image/jpeg") 1x, url("../../images/gift-case-tablet@2x.jpg") type("image/jpeg") 2x);
+    background-repeat: no-repeat;
+    background-size: auto 100%, 707px 714px;
+    background-position: center, bottom -210px center;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/gift-case@1x.jpg") type("image/jpeg") 1x, url("../../images/gift-case@2x.jpg") type("image/jpeg") 2x);
+    background-repeat: no-repeat;
+    background-size: auto 100%, auto 100%;
+    background-position: center, center;
+  }
 }
 
 .main-catalog__banner-text {
