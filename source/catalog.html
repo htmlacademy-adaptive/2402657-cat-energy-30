@@ -16,9 +16,9 @@
 </head>
 <body class="page__body">
 <header class="main-header main-header--underline">
-  <div class="container">
-    <nav class="page-nav">
-      <h2 class="visually-hidden">Навигация по сайту</h2>
+  <div class="main-header__container">
+    <h2 class="visually-hidden">Навигация по сайту</h2>
+    <div class="main-header__inner">
       <a class="logo" href="index.html">
         <picture>
           <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/logo-desktop.svg">
@@ -26,23 +26,23 @@
           <img class="logo__img" src="./images/logo-mobile.svg" width="190" height="38" alt="Текст Cat Energy.">
         </picture>
       </a>
-      <div class="main-nav main-nav--closed">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--current" href="#">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      <button class="main-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
+    <div class="main-nav main-nav--closed main-nav--nojs">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--current" href="#">Каталог продукции</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </header>
 <main class="main-catalog">
