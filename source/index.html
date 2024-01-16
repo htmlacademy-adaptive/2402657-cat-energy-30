@@ -116,34 +116,29 @@
             </div>
             </div>
           </div>
-          <section class="example__slider slider">
-            <h3 class="visually-hidden">Слайдер с котом</h3>
-            <div class="slider__images">
-              <div class="slider__image-wrapper slider__image-wrapper--before slider__image-wrapper--active">
-                <picture>
-                  <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="./images/cat-before-desktop@1x.png 1x, ./images/cat-before-desktop@2x.png 2x">
-                  <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="./images/cat-before-tablet@1x.png 1x, ./images/cat-before-tablet@2x.png 2x">
-                  <img src="./images/cat-before-mobile@1x.png" srcset="./images/cat-before-mobile@2x.png" width="280" height="256" alt="Картинка котика до курса.">
-                </picture>
-              </div>
-              <div class="slider__image-wrapper slider__image-wrapper--after">
-                <picture>
-                  <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="./images/cat-after-desktop@1x.png 1x, ./images/cat-after-desktop@2x.png 2x">
-                  <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="./images/cat-after-tablet@1x.png 1x, ./images/cat-after-tablet@2x.png 2x">
-                  <img src="./images/cat-after-mobile@1x.png" srcset="./images/cat-after-mobile@2x.png" width="280" height="256" alt="Картинка котика после курса.">
-                </picture>
-              </div>
+          <div class="example__slider">
+            <div class="slider">
+              <ul class="slider__list">
+                <li class="slider__screen slider__screen--before">
+                  <picture>
+                    <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="./images/cat-before-desktop@1x.png 1x, ./images/cat-before-desktop@2x.png 2x">
+                    <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="./images/cat-before-tablet@1x.png 1x, ./images/cat-before-tablet@2x.png 2x">
+                    <img src="./images/cat-before-mobile@1x.png" srcset="./images/cat-before-mobile@2x.png" width="280" height="256" alt="Картинка котика до курса.">
+                  </picture>
+                </li>
+                <li class="slider__screen slider__screen--after">
+                  <picture>
+                    <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="./images/cat-after-desktop@1x.png 1x, ./images/cat-after-desktop@2x.png 2x">
+                    <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="./images/cat-after-tablet@1x.png 1x, ./images/cat-after-tablet@2x.png 2x">
+                    <img src="./images/cat-after-mobile@1x.png" srcset="./images/cat-after-mobile@2x.png" width="280" height="256" alt="Картинка котика после курса.">
+                  </picture>
+                </li>
+              </ul>
+              <button class="slider__toggle" type="button">
+                <span class="visually-hidden">Переключить состояние слайдера</span>
+              </button>
             </div>
-            <div class="slider__buttons">
-              <span class="slider__label slider__label--before" tabindex="0"></span>
-              <div class="slider__bar">
-                <div class="slider__toggle">
-                  <span class="visually-hidden">Переключатель</span>
-                </div>
-              </div>
-              <span class="slider__label slider__label--after" tabindex="0"></span>
-            </div>
-          </section>
+          </div>
         </div>
       </div>
     </section>
