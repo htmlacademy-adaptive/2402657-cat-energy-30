@@ -7,13 +7,17 @@
 
   .user-data__column {
     width: calc((100% - 80px) / 2); //80px отсуп между колонками
-    height: auto;
   }
 }
 
 .user-data__wrapper--low {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: flex;
+    margin-bottom: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 59px;
   }
 }
 
@@ -33,13 +37,16 @@
   margin-bottom: 21px;
 
   @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+    min-height: 54px;
     width: 284px;
-    margin-right: 60px;
+    margin-right: 58px;
   }
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    margin-right: 80px;
+    margin-right: 77px;
   }
 }
 
@@ -60,8 +67,13 @@
   line-height: 16px;
   margin: 0 0 32px;
 
-  @media (min-width: 768px) {
-    margin-top: 15px;
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    margin-top: 6px;
     align-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 10px;
   }
 }

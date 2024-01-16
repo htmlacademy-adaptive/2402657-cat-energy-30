@@ -14,12 +14,13 @@
       width: 50%;
       height: 100%;
       position: absolute;
-      z-index: -1;
+      z-index: -2;
       left: 50%;
       background-color: #68b738;
     }
   }
 }
+
 
 .hero__wrapper {
   padding-top: 27px;
@@ -30,7 +31,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 113px;
+    padding-top: 55px;
   }
 
   &::before {
@@ -42,6 +43,9 @@
     z-index: -1;
     top: 0;
     background-color: #68b738;
+    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85) 100%), url("../../images/mobile-index-background.png");
+    background-repeat: no-repeat;
+    background-position: center;
 
     @media (min-width: $tablet-width) {
       display: none;
@@ -158,8 +162,8 @@
 
   @media (min-width: $desktop-width) {
     z-index: -1;
-    bottom: 54px;
-    left: calc(50% - 3px);
+    bottom: 52px;
+    left: calc(50% + 113px);
   }
 }
 

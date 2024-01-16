@@ -1,7 +1,30 @@
 .main-nav__list {
-  display: none;
+  //display: none;
 }
 
+.main-header__toggle {
+  position: absolute;
+  top: 8px;
+  right: 20px;
+  z-index: 2;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+
+.main-header__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
 
 @media (min-width: $tablet-width) {
   .main-nav__list {
@@ -9,7 +32,7 @@
     width: 480px;
   }
 
-  .main-nav__toggle {
+  .main-header__toggle {
     display: none;
   }
 }

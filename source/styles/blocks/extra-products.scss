@@ -1,9 +1,23 @@
 .extra-products {
+  position: relative;
   margin-top: 51px;
   margin-bottom: 35px;
 
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 20px;
+    border-bottom: 2px solid #68b738;
+    z-index: -1;
+  }
+
   @media (min-width: $tablet-width) {
     margin-top: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 75px;
   }
 }
 
@@ -12,10 +26,14 @@
 }
 
 .extra-products__item {
+  padding-top: 13px;
   margin-bottom: 32px;
+  border-top: 1px solid #cdcdcd;
 }
 
 .extra-products__title {
+  display: inline-block;
+  position: relative;
   margin-top: 0;
   margin-bottom: 49px;
   color: #000000;
@@ -23,12 +41,38 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
+  max-width: 226px;
+  padding: 0 20px;
+  margin-left: -20px;
+  background-color: #ffffff;
+  word-break: break-word;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin-top: 0;
-    margin-bottom: 75px;
+    max-width: 400px;
+    margin: 0 0 79px;
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-products__title {
+    margin-left: -40px;
+  }
+
+  .extra-products__title::before {
+    left: -110px;
+    height: 2px;
+    bottom: 10px;
+    width: 70px;
+  }
+
+  .extra-products__title::after {
+    //right: -435px;
+    left: 378px;
+    bottom: 10px;
+    width: 952px;
   }
 }
 
@@ -42,7 +86,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 895px;
+    width: 895px;
     margin-bottom: 0;
   }
 }
@@ -160,6 +204,7 @@
   .extra-products__item {
     margin-bottom: 0;
     padding: 26px 38px;
+    border: none;
   }
 
   .extra-products__item:nth-child(n+1) {
@@ -176,11 +221,17 @@
   .extra-products__item {
     display: flex;
     justify-content: space-between;
+    padding: 15px 0 15px 0;
   }
 
   .extra-products__item-wrapper {
     margin-bottom: 0;
     flex-grow: 1;
     text-align: left;
+  }
+
+  .extra-products__item:nth-child(n+1) {
+    border-left: none;
+    border-right: none;
   }
 }

@@ -1,5 +1,30 @@
 .site-list {
   list-style: none;
+  text-align: center;
+}
+
+.site-list__link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000000;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.site-list__item {
+  padding-top: 11px;
+  padding-bottom: 12px;
+  border-top: 1px solid #e6e6e6;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  //@media (min-width: $tablet-width) {
+  //  padding-top: 0;
+  //  padding-bottom: 0;
+  //}
 }
 
 @media (min-width: $tablet-width) {
@@ -11,16 +36,13 @@
 
   .site-list__item {
     margin-left: 35px;
+    border: none;
   }
 
   .site-list__link {
     position: relative;
-    text-decoration: none;
-    cursor: pointer;
-    color: #000000;
     font-size: 18px;
     line-height: 24px;
-    text-transform: uppercase;
 
     &:hover,
     &:focus {

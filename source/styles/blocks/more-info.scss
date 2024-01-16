@@ -1,6 +1,14 @@
 .more-info {
   padding: 0;
-  margin: 0 0 28px;
+  margin: 0 0 26px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 28px;
+  }
 }
 
 .more-info__list {
@@ -13,11 +21,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 275px);
+    column-gap: 49px;
   }
 }
 
 .more-info__title {
+  position: relative;
   color: #000000;
   font-size: 24px;
   font-weight: 400;
@@ -28,6 +39,11 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
   }
 }
 
@@ -36,7 +52,7 @@
   margin-bottom: 6px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 32px;
+    margin-bottom: 37px;
   }
 }
 
@@ -50,7 +66,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    padding-left: 20px;
+    padding-left: 62px;
   }
 }
 
@@ -61,29 +77,36 @@
 
 .more-info__input-custom {
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   background-color: #ffffff;
   border: 1px solid #cdcdcd;
-  margin-top: 8px;
+  margin-top: 5px;
   margin-left: -45px;
   cursor: pointer;
 
   &:disabled {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-left: -62px;
+    width: 40px;
+    height: 40px;
+  }
 }
 
 //checked
 .more-info__input:checked + .more-info__input-custom {
-  width: 30px;
-  height: 30px;
   background-image: url("../../images/icons/stack.svg#tick-active-hover");
+  background-size: 26px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 //disabled
 .more-info__input:disabled + .more-info__input-custom {
-  width: 30px;
-  height: 30px;
+
   background-image: url("../../images/icons/stack.svg#tick-disabled");
 }

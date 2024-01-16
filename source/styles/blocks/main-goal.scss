@@ -1,5 +1,5 @@
 .main-goal {
-  margin: 0 0 25px;
+  margin: 0 0 40px;
   padding: 0;
 
   @media (min-width: 768px) {
@@ -7,6 +7,7 @@
     border: 1px solid #e7e7e7;
     width: 628px;
     height: 196px;
+    margin: 0 0 67px;
   }
 
   @media (min-width: 1440px) {
@@ -17,11 +18,17 @@
 
 .main-goal__list {
   list-style: none;
+
+  @media (min-width: 768px) {
+    padding: 23px 0 32px;
+  }
 }
 
 .main-goal__item {
+  margin-bottom: 7px;
+
   @media (min-width: 768px) {
-    margin-bottom: 23px;
+    margin-bottom: 17px;
   }
 }
 
@@ -37,7 +44,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    padding-left: 20px;
+    padding-left: 87px;
   }
 }
 
@@ -53,21 +60,38 @@
   border-radius: 50px;
   background-color: #ffffff;
   border: 1px solid #cdcdcd;
-  margin-top: 8px;
+  margin-top: 7px;
   margin-left: -45px;
   cursor: pointer;
 
   &:disabled {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 36px;
+    height: 36px;
+    margin-top: 2px;
+    margin-left: -59px;
+  }
 }
 
 //checked
 .main-goal__input:checked + .main-goal__input-custom {
   background-image: url("../../images/icons/stack.svg#radiobutton-active");
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    background-size: 20px;
+  }
 }
 
 //disabled
 .main-goal__input:disabled + .main-goal__input-custom {
   background-image: url("../../images/icons/stack.svg#radiobutton-disabled");
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position: center;
 }

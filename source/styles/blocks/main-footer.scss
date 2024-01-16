@@ -19,7 +19,7 @@
       width: 100%;
       transform: translateX(-50%);
       top: 42px;
-      border: 1px solid #d9d9d9;
+      border-bottom: 1px solid #d9d9d9;
 
       @media (min-width: $tablet-width) {
         display: none;
@@ -58,6 +58,10 @@
     @media (min-width: $tablet-width) {
       padding: 55px 30px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding: 66px 110px;
+    }
   }
 
   .main-footer__logo-icon {
@@ -76,7 +80,7 @@
       position: absolute;
       width: 100%;
       top: 40px;
-      border: 1px solid #d9d9d9;
+      border-bottom: 1px solid #d9d9d9;
 
       @media (min-width: $tablet-width) {
         display: none;
@@ -104,4 +108,21 @@
 
 .main-footer__logo-icon:active {
   opacity: 0.6;
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__contacts {
+    position: relative;
+  }
+
+  .main-footer__contacts-wrapper {
+    box-sizing: border-box;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    width: 565px;
+    z-index: 1;
+    background-color: #ffffff;
+    padding: 60px 88px 60px 80px;
+  }
 }
